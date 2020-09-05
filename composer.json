@@ -1,0 +1,17 @@
+{
+    "name": "dangb/medium-tutor",
+    "authors": [
+        {
+            "name": "bui dang binh",
+            "email": "dangbinh4869@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "Lib/"
+        }
+    }
+}
