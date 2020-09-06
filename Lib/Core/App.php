@@ -5,6 +5,8 @@ use Lib\Core\Request;
 use Lib\Core\Response;
 use Lib\Controller\Home;
 use Lib\Model\Post;
+use Model\User;
+use Model\UserInfo;
 class App {
   public static function run() {
     Post::load();
@@ -29,6 +31,10 @@ class App {
       } else {
         $res->status(404)->toJSON(['error' => "Not Found"]);
       }
+    });
+
+    Router::get('/users/([0-9]*)', function (Request $req, Response $res) {
+
     });
   }
 }
